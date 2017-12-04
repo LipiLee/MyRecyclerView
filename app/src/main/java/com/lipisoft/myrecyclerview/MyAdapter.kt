@@ -19,7 +19,5 @@ class MyAdapter(private val list: MutableList<Packet>) : RecyclerView.Adapter<My
         }
     }
 
-    override fun getItemCount(): Int {
-        return list.size
-    }
+    override fun getItemCount() = list.size
 }
